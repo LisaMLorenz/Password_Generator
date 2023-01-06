@@ -89,6 +89,20 @@ var upperCasedCharacters = [
 ];
 
 // Function to prompt user for password options
+var passwordLength = prompt ("How many characters long is your password going to be?"); // create an if statement to limit password length 10 - 64 characters
+
+if (passwordLength < 10) {
+  prompt("Please choose a password that's at least 10 and no longer than 64 characters.")
+} else if (passwordLength > 64) {
+  prompt("Sorry. Choose a password that is no longer than 64 but has at least 10 characters.")
+  console.log("Password length chosen.")
+};
+
+var passLowerCase = prompt ("Should your password contain lowercase characters?");
+
+if (passLowerCase = true ) // then access lowerCasedCharacters array with "Math.random().toString(36).slice(2, 10)" from StackOverflow (https://stackoverflow.com/questions/1497481/javascript-password-generator)
+  
+
 function getPasswordOptions() {
 
 }
