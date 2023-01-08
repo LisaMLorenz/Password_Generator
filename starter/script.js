@@ -89,22 +89,42 @@ var upperCasedCharacters = [
 ];
 
 // Function to prompt user for password options
-var passwordLength = prompt ("How many characters long is your password going to be?"); // create an if statement to limit password length 10 - 64 characters
+var passwordLength = prompt("How many characters long is your password going to be?"); // create an if statement to limit password length 10 - 64 characters
 
 if (passwordLength < 10) {
   prompt("Please choose a password that's at least 10 and no longer than 64 characters.")
 } else if (passwordLength > 64) {
   prompt("Sorry. Choose a password that is no longer than 64 but has at least 10 characters.")
-  console.log("Password length chosen.")
-};
+}
+else if (passwordLength > 9) {
+console.log("Password length chosen.");
+}
 
-var passLowerCase = prompt ("Should your password contain lowercase characters?");
 
-if (passLowerCase = true ) // then access lowerCasedCharacters array with "Math.random().toString(36).slice(2, 10)" from StackOverflow (https://stackoverflow.com/questions/1497481/javascript-password-generator)
-  
+const passLowerCase = confirm("Should your password contain lowercase characters?");
+
+if (response) { 
+  // then access lowerCasedCharacters array with possibly with "Math.random().toString(36).slice(2, 10)" from StackOverflow (https://stackoverflow.com/questions/1497481/javascript-password-generator)
+  confirm("Your password will feature lowercase letters.")
+}else {
+    confirm("Your password won't contain any lowercase letters.")
+  }
+  console.log("Lowercase chosen.");
+;
+
+
+// var passUpperCase = prompt("Should your password contain uppercase characters?");
+
+// if (passUpperCase = true) { // then access upperCasedCharacters array with possibly with "Math.random().toString(36).slice(2, 10)" from StackOverflow (https://stackoverflow.com/questions/1497481/javascript-password-generator)
+//   prompt("Your password will feature uppercase letters.")
+//  else if (passUpperCase = false) {
+//     prompt("Careful, your password won't contain any uppercase letters.")
+//   }
+//   console.log("Uppercase chosen.")
+// };
 
 function getPasswordOptions() {
-
+var userPassword = prompt ("")
 }
 
 // Function for getting a random element from an array
