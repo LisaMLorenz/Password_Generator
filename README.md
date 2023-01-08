@@ -15,7 +15,7 @@ The HTML code was already provided.
 N/A
 
 ## Usage
-https://lisamlorenz.github.io/Console-Finances/
+https://lisamlorenz.github.io/password_generator/
 
 ### Write JavaScript code that prompts user input and based on that creates a random password:
 
