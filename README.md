@@ -34,8 +34,8 @@ https://lisamlorenz.github.io/password_generator/
   * Once prompts are answered then the password should be generated and displayed in an alert or written to the page
 
 ### Screenshot
-[Click here to see the deployed screenshot](assets/Screenshot_Password_Gen.png))
-<img width="1262" alt="Screenshot of Password Generator showing only 3 characters" src="https://user-images.githubusercontent.com/116456417/209488729-bcd59125-6d67-42e0-a007-e0687955c1f7.png">
+[Click here to see the deployed screenshot](assets/Screenshot_Password_Gen.png)
+<img width="1262" alt="Screenshot of Password Generator showing only 3 characters" src="https://github.com/LisaMLorenz/password_generator/blob/main/assets/Screenshot_Password_Gen.png">
 
 
 ## Credits
