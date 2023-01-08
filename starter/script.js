@@ -97,34 +97,34 @@ if (passwordLength < 10) {
   prompt("Sorry. Choose a password that is no longer than 64 but has at least 10 characters.")
 }
 else if (passwordLength > 9) {
-console.log("Password length chosen.");
+  console.log("Password length chosen.");
 }
 
 
 const passLowerCase = confirm("Should your password contain lowercase characters?");
 
-if (response) { 
-  // then access lowerCasedCharacters array with possibly with "Math.random().toString(36).slice(2, 10)" from StackOverflow (https://stackoverflow.com/questions/1497481/javascript-password-generator)
-  confirm("Your password will feature lowercase letters.")
-}else {
-    confirm("Your password won't contain any lowercase letters.")
-  }
-  console.log("Lowercase chosen.");
+if (confirm == true) {
+  userPassword.push(lowerCasedCharacters); // then access lowerCasedCharacters array with possibly with "Math.random().toString(36).slice(2, 10)" from StackOverflow (https://stackoverflow.com/questions/1497481/javascript-password-generator)
+  // alert("Your password will feature lowercase letters.");
+} else if (confirm == false) {
+  alert("Your password won't contain any lowercase letters.");
+}
+console.log("Lowercase chosen.");
 ;
 
+const passUpperCase = confirm("Should your password contain uppercase characters?");
 
-// var passUpperCase = prompt("Should your password contain uppercase characters?");
-
-// if (passUpperCase = true) { // then access upperCasedCharacters array with possibly with "Math.random().toString(36).slice(2, 10)" from StackOverflow (https://stackoverflow.com/questions/1497481/javascript-password-generator)
-//   prompt("Your password will feature uppercase letters.")
-//  else if (passUpperCase = false) {
-//     prompt("Careful, your password won't contain any uppercase letters.")
-//   }
-//   console.log("Uppercase chosen.")
-// };
+if (confirm == true) {
+  userPassword.push(upperCasedCharacters);// then access upperCasedCharacters array with possibly with "Math.random().toString(36).slice(2, 10)" from StackOverflow (https://stackoverflow.com/questions/1497481/javascript-password-generator)
+  // alert("Your password will feature uppercase letters.")
+} else if (confirm == false) {
+  alert("Your password won't contain any uppercase letters.")
+}
+console.log("Uppercase chosen.");
+;
 
 function getPasswordOptions() {
-var userPassword = prompt ("")
+  var userPassword = prompt("")
 }
 
 // Function for getting a random element from an array
