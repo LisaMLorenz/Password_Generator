@@ -138,9 +138,14 @@ var passUpperCase = confirm("Should your password contain uppercase characters?"
 
 if (confirm == true) {
   // userPassword.concat(upperCasedCharacters);
-  var upperPassword = upperCasedCharacters[Math.floor(Math.random() * passwordLength)];
-  // then access upperCasedCharacters array with possibly with "Math.random().toString(36).slice(2, 10)" from StackOverflow (https://stackoverflow.com/questions/1497481/javascript-password-generator)
-  // alert("Your password will feature uppercase letters.")
+
+  function getRandomUpper(passwordLength) {
+    var RandomUpperString = []
+    return Math.floor(Math.random() * passwordLength);
+  }
+
+  // var upperPassword = upperCasedCharacters[Math.floor(Math.random() * passwordLength)];
+
 } else if (confirm == false) {
   alert("Your password won't contain any uppercase letters.")
 }
@@ -158,54 +163,48 @@ if (confirm == true) {
   alert("Your password won't contain any numbers.")
 }
 console.log("Numerals chosen?: " + passNumerals);
+// console.log(numberPassword);
+
+// Alert to choose special characters.
 
 var passSpecial = confirm("Should your password contain any special characters?");
 
 if (confirm == true) {
-  for (var i = 0; i < passwordLength.length; i++){
-  var specialPassword = specialCharacters[Math.floor(Math.random() * passwordLength)];}
+  for (var i = 0; i < passwordLength.length; i++) {
+    var specialPasswordValue = specialCharacters[Math.floor(Math.random() * passwordLength)];
+  }
   // then access upperCasedCharacters array with possibly with "Math.random().toString(36).slice(2, 10)" from StackOverflow (https://stackoverflow.com/questions/1497481/javascript-password-generator)
   // alert("Your password will feature uppercase letters.")
 } else if (confirm == false) {
   alert("Your password won't contain any special characters.")
   console.log(specialPassword);
 }
+
 console.log("Special characters chosen?: " + passSpecial);
 
+// Code to check if at least one type of character was chosen to create a password.
 
-console.log(userPassword);
-
-// function getPasswordOptions() {
-//   var userPassword = prompt("")
-//   return passLowerCase + passUpperCase + passSpecialCase + passNumerals
-// }
-
-// function shuffle(userPassword) {
-//   let currentIndex = userPassword.length, randomIndex;
-
-//   // While there remain elements to shuffle.
-//   while (currentIndex != 0) {
-
-//     // Pick a remaining element.
-//     randomIndex = Math.floor(Math.random() * currentIndex);
-//     currentIndex--;
-
-//     // And swap it with the current element.
-//     [userPassword[currentIndex], userPassword[randomIndex]] = [
-//       userPassword[randomIndex], userPassword[currentIndex]];
-//   }
-
-//   return userPassword;
-// }
-// var arr = userPassword;
-// shuffle(arr);
-// console.log(arr);
+if ([passLowerCase, passUpperCase, passNumerals, passSpecial].some(item => item)) {
+  alert("Your selection is valid.")
+} else {
+  alert("Your selection is invalid. Please reload the page and start again.")
+}
+console.log("Password selection complete.");
 
 
+// This is a function declaration 
+
+var addingUp = [];
+
+function longPassword(numberPassword, specialPasswordValue, upperPassword, RandomLowerString) {
+  console.log("Long password: " + numberPassword + specialPasswordValue + upperPassword + RandomLowerString);
+  return;
+}
 
 // Function for getting a random element from an array
 function getRandom(arr) {
-
+  var PasswordValue = [Math.floor(Math.random() * passwordLength)];
+  return arr[PasswordValue];
 }
 
 // Function to generate password with user input

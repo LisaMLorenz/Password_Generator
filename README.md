@@ -1,17 +1,23 @@
 # Module 5 Challenge: Password Generator
+# Description
 
-## Overview
- 
-This week’s challenge requires you to create an application that an employee can use to generate a random password based on criteria they’ve selected by modifying starter code. This app will run in the browser, and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean and polished user interface that is responsive, ensuring that it adapts to multiple screen sizes.
+Create an application to generate a random password based on criteria the user selected. This app will run in the browser. The password can include special characters.
 
-The password can include special characters. If you’re unfamiliar with these, see this [list of Password Special Characters from the OWASP Foundation](https://www.owasp.org/index.php/Password_special_characters).
+I want to use JavaScript to create randomized passwords for a user based on strings. I want to use the console to see if my code works.
 
-## Instructions
+## CSS
+This exercise didn't require any CSS.
 
-The following image shows the web application's appearance and functionality:
+## HTML
+The HTML code was already provided.
 
-![password generator demo](./assets/05-javascript-challenge-demo.png)
+## Installation
+N/A
 
+## Usage
+https://lisamlorenz.github.io/Console-Finances/
+
+### Write JavaScript code that prompts user input and based on that creates a random password:
 
 * Generate a password when the button is clicked
   * Present a series of prompts for password criteria
@@ -21,59 +27,19 @@ The following image shows the web application's appearance and functionality:
       * Lowercase
       * Uppercase
       * Numeric
-      * Special characters ($@%&*, etc)
+      * Special characters
+
   * Code should validate for each input and at least one character type should be selected
+
   * Once prompts are answered then the password should be generated and displayed in an alert or written to the page
 
-## Grading Requirements
-
-This challenge is graded based on the following criteria: 
-
-### Technical Acceptance Criteria: 40%
-
-* Satisfies all of the above acceptance criteria plus the following:
-
-  * The challenge should not produce any errors in the console when you inspect it using Chrome DevTools.
-
-### Deployment: 32%
-
-* Application deployed at live URL.
-
-* Application loads with no errors.
-
-* Application GitHub URL submitted.
-
-* GitHub repository that contains application code.
-
-### Application Quality: 15%
-
-* Application user experience is intuitive and easy to navigate.
-
-* Application user interface style is clean and polished.
-
-* Application resembles the mock-up functionality provided in the challenge instructions.
-
-### Repository Quality: 13%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains quality README file with description, screenshot, and link to deployed application.
+### Screenshot
+[Click here to see the deployed screenshot](./Screenshots/deployedscreenshotfinal.png)
+<img width="1262" alt="Screenshot 2022-12-26 at 02 18 22" src="https://user-images.githubusercontent.com/116456417/209488729-bcd59125-6d67-42e0-a007-e0687955c1f7.png">
 
 
-## Review
+## Credits
+N/A
 
-You are required to submit the following for review:
-
-* The URL of the deployed application.
-
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
-
----
-
-© 2022 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+## License
+MIT License
