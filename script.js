@@ -88,7 +88,6 @@ var upperCasedCharacters = [
   'Z'
 ];
 
-console.log(upperCasedCharacters);
 
 // Function to prompt user for password options
 function userPassOptions() {
@@ -149,10 +148,10 @@ var passUpperCase = confirm("Should your password contain uppercase characters?"
 if (confirm == true) {
   // userPassword.concat(upperCasedCharacters);
 
-  function getRandomUpper(passwordLength) {
-    var RandomUpperString = []
-    return Math.floor(Math.random() * passwordLength); // I've tried to create a string of random items per prompt, but don't think this works - or is necessary as it can be executed further down in another function.
-  }
+  // function getRandomUpper(passwordLength) {
+  //   var RandomUpperString = []
+  //   return Math.floor(Math.random() * passwordLength); // I've tried to create a string of random items per prompt, but don't think this works - or is necessary as it can be executed further down in another function.
+  // }
 
   // var upperPassword = upperCasedCharacters[Math.floor(Math.random() * passwordLength)];
 
@@ -166,8 +165,8 @@ console.log("Uppercase chosen: " + passUpperCase);
 var passNumerals = confirm("Should your password contain numbers?");
 
 if (confirm == true) {
-  var numberPassword = numericCharacters[Math.floor(Math.random() * passwordLength)];
-  // then access upperCasedCharacters array with possibly with "Math.random().toString(36).slice(2, 10)" from StackOverflow (https://stackoverflow.com/questions/1497481/javascript-password-generator)
+  // var numberPassword = numericCharacters[Math.floor(Math.random() * passwordLength)];
+  // // then access upperCasedCharacters array with possibly with "Math.random().toString(36).slice(2, 10)" from StackOverflow (https://stackoverflow.com/questions/1497481/javascript-password-generator)
   // alert("Your password will feature uppercase letters.")
 } else if (confirm == false) {
   alert("Your password won't contain any numbers.")
@@ -180,9 +179,9 @@ console.log("Numerals chosen?: " + passNumerals);
 var passSpecial = confirm("Should your password contain any special characters?");
 
 if (confirm == true) {
-  for (var i = 0; i < passwordLength.length; i++) {
-    var specialPasswordValue = specialCharacters[Math.floor(Math.random() * passwordLength)];
-  }
+  // for (var i = 0; i < passwordLength.length; i++) {
+  //   var specialPasswordValue = specialCharacters[Math.floor(Math.random() * passwordLength)];
+  // }
   // then access upperCasedCharacters array with possibly with "Math.random().toString(36).slice(2, 10)" from StackOverflow (https://stackoverflow.com/questions/1497481/javascript-password-generator)
   // alert("Your password will feature uppercase letters.")
 } else if (confirm == false) {
