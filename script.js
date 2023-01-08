@@ -91,19 +91,29 @@ var upperCasedCharacters = [
 console.log(upperCasedCharacters);
 
 // Function to prompt user for password options
-var passwordLength = 0;
-var passLowerCase = 0;
-var passUpperCase = 0;
-var userPassword = [0];
+function userPassOptions() {
+  var options = {
+    passwordLength: 0,
+    passLowerCase: true,
+    passUpperCase: true,
+    numberCase: true,
+    specialCase: true,
+  }
+
+  return options;
+
+}
 
 // Input to choose password length.
 
 var passwordLength = prompt("How many characters long is your password going to be?"); // create an if statement to limit password length 10 - 64 characters
 
-if (passwordLength < 10) {
-  prompt("Please choose a password that's at least 10 and no longer than 64 characters.")
-} else if (passwordLength > 64) {
-  prompt("Sorry. Choose a password that is no longer than 64 but has at least 10 characters.")
+function userPasswordLength() {
+  if (passwordLength < 10) {
+    prompt("Please choose a password that's at least 10 and no longer than 64 characters.")
+  } else if (passwordLength > 64) {
+    prompt("Sorry. Choose a password that is no longer than 64 but has at least 10 characters.")
+  }
 }
 
 console.log("Password length chosen: " + passwordLength);
@@ -141,7 +151,7 @@ if (confirm == true) {
 
   function getRandomUpper(passwordLength) {
     var RandomUpperString = []
-    return Math.floor(Math.random() * passwordLength);
+    return Math.floor(Math.random() * passwordLength); // I've tried to create a string of random items per prompt, but don't think this works - or is necessary as it can be executed further down in another function.
   }
 
   // var upperPassword = upperCasedCharacters[Math.floor(Math.random() * passwordLength)];
@@ -192,15 +202,6 @@ if ([passLowerCase, passUpperCase, passNumerals, passSpecial].some(item => item)
 console.log("Password selection complete.");
 
 
-// This is a function declaration 
-
-var addingUp = [];
-
-function longPassword(numberPassword, specialPasswordValue, upperPassword, RandomLowerString) {
-  console.log("Long password: " + numberPassword + specialPasswordValue + upperPassword + RandomLowerString);
-  return;
-}
-
 // Function for getting a random element from an array
 function getRandom(arr) {
   var PasswordValue = [Math.floor(Math.random() * passwordLength)];
@@ -208,11 +209,40 @@ function getRandom(arr) {
 }
 
 // Function to generate password with user input
-function generatePassword() { // calls getPasswordOptions and getRandom
-  alert("Called this function");
-  return "This is the secret password.";
+function generatePassword() {
 
-}
+  var options = userPassOptions();
+  var password = [];
+  var userSelection = [];
+
+  if (options.passLowerCase) {
+    password.push(getRandom(lowerCasedCharacters));
+    userSelection.push(lowerCasedCharacters);
+  }
+
+  if (options.passUpperCase) {
+    password.push(getRandom(upperCasedCharacters));
+    userSelection.push(upperCasedCharacters);
+  }
+
+  if (options.passNumerals) {
+    password.push(getRandom(numericCharacters));
+    userSelection.push(numericCharacters);
+  }
+
+  if (options.specialCase) {
+    password.push(getRandom(specialCharacters));
+    userSelection.push(specialCharacters);
+  }
+
+  for (var i = password.length; i < options.passwordLength; i++) {
+    const randomIndex = Math.floor(Math.random() * userSelection.length);
+
+    password.push(getRandom(userSelection[PasswordValue]));
+  }
+
+  return password.join("");
+} 
 
 // Don't edit below as it should function in returning the newly generated password to user screen.
 
