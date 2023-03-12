@@ -8,11 +8,11 @@
 2. [Usage](#toc-usage)
 3. [Screenshots](#toc-screenshots)
 4. [License](#toc-license)
-6. [Collaborators](#toc-collaborators)
-7. [Contribute](#toc-contribute)
-8. [Tests](#toc-tests)
+5. [Collaborators](#toc-collaborators)
+6. [Contribute](#toc-contribute)
+7. [Tests](#toc-tests)
 8. [FAQ](#toc-faq)
-10. [Contact](#toc-contact)
+9. [Contact](#toc-contact)
 
 # Description  <a name="toc-appdescription"></a>
 
