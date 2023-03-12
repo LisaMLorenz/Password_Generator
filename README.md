@@ -33,9 +33,18 @@ https://lisamlorenz.github.io/password_generator/
 
   * Once prompts are answered then the password should be generated and displayed in an alert or written to the page
 
-### Screenshot
-[Click here to see the deployed screenshot](assets/Screenshot_Password_Gen.png)
-<img width="1262" alt="Screenshot of Password Generator showing only 3 characters" src="https://github.com/LisaMLorenz/password_generator/blob/main/assets/Screenshot_Password_Gen.png">
+### Screenshots
+[Click here to see the deployed screenshot](assets/pass_gen_result.png)
+<img width="1262" alt="Screenshot of Password Generator showing generated password (example)" src="https://github.com/LisaMLorenz/password_generator/blob/main/assets/pass_gen_result.png">
+
+[Click here to see the deployed screenshot](assets/pass_gen_options_prompt_locase.png)
+<img width="1262" alt="Screenshot of Password Generator showing option prompt for lower case" src="https://github.com/LisaMLorenz/password_generator/blob/main/assets/pass_gen_options_prompt_locase.png">
+
+[Click here to see the deployed screenshot](assets/pass_gen_passlength_prompt.png)
+<img width="1262" alt="Screenshot of Password Generator prompt for password length" src="https://github.com/LisaMLorenz/password_generator/blob/main/assets/pass_gen_passlength_prompt.png">
+
+[Click here to see the deployed screenshot](assets/pass_gen_invalidinput_alert.png)
+<img width="1262" alt="Screenshot of Password Generator showing invalid input alert" src="https://github.com/LisaMLorenz/password_generator/blob/main/assets/pass_gen_invalidinput_alert.png">
 
 
 ## Credits
